@@ -490,3 +490,597 @@ Completed in 66ms (View: 0, DB: 0) | 200 OK [http://localhost/proposal_viewer/sh
 Processing ProposalViewerController#show (for 127.0.0.1 at 2011-11-28 16:03:21) [GET]
   Parameters: {"id"=>"1"}
 Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/proposal_viewer/show/1]
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20111128231720)
+Migrating to CreateProposals (20111128231731)
+Migrating to CreateProposalSections (20111128231741)
+Migrating to AddSampleData (20111128232157)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("clients")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("proposal_sections")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("proposals")[0m
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 21:15:03) [GET]
+  Parameters: {"id"=>"1"}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/proposal_viewer/show/1]
+
+
+Processing ProposalViewerController#index (for 127.0.0.1 at 2012-12-01 21:15:35) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: show):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 21:49:45) [GET]
+  Parameters: {"id"=>"1"}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/proposal_viewer/show/1]
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 21:53:03) [GET]
+  Parameters: {"id"=>"1"}
+
+NameError (undefined local variable or method `template' for #<ProposalViewerController:0x000000033d0ee8>):
+  app/controllers/proposal_viewer_controller.rb:5:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (30.7ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 21:53:19) [GET]
+  Parameters: {"id"=>"1"}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/proposal_viewer/show/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 21:53:19) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/style/style.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 21:53:19) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/images/logo-footer.png" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 22:30:47) [GET]
+  Parameters: {"id"=>"1"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/models/template.rb:7:in `add_variables'
+  app/controllers/proposal_viewer_controller.rb:8:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (30.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 22:30:54) [GET]
+  Parameters: {"id"=>"1"}
+
+ArgumentError (wrong number of arguments(1 for 0)):
+  app/controllers/proposal_viewer_controller.rb:4:in `initialize'
+  app/controllers/proposal_viewer_controller.rb:4:in `new'
+  app/controllers/proposal_viewer_controller.rb:4:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 22:31:21) [GET]
+  Parameters: {"id"=>"1"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/models/template.rb:7:in `add_variables'
+  app/controllers/proposal_viewer_controller.rb:8:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (30.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 22:31:34) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `replace_variables' for #<Template:0x0000000365b208>):
+  app/models/template.rb:13:in `render'
+  app/controllers/proposal_viewer_controller.rb:9:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 22:33:24) [GET]
+  Parameters: {"id"=>"1"}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/proposal_viewer/show/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 22:33:24) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/style/style.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 22:33:24) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/images/logo-footer.png" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 22:33:52) [GET]
+  Parameters: {"id"=>"1"}
+
+RuntimeError ({}):
+  app/models/template.rb:14:in `render'
+  app/controllers/proposal_viewer_controller.rb:9:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 22:34:14) [GET]
+  Parameters: {"id"=>"1"}
+
+RuntimeError ({:client_name=>"Test"}):
+  app/models/template.rb:14:in `render'
+  app/controllers/proposal_viewer_controller.rb:9:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (56.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 22:34:21) [GET]
+  Parameters: {"id"=>"1"}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/proposal_viewer/show/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 22:34:21) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/style/style.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 22:34:21) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/images/logo-footer.png" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (118.7ms)[0m   [0;1mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "company" varchar(255), "website" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (115.2ms)[0m   [0;1mCREATE TABLE "proposal_sections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "proposal_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (116.4ms)[0m   [0;1mCREATE TABLE "proposals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_name" varchar(255), "send_date" date, "client_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (108.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (92.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (108.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20111128232157')[0m
+  [4;36;1mSQL (125.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20111128231720')[0m
+  [4;35;1mSQL (125.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20111128231731')[0m
+  [4;36;1mSQL (134.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20111128231741')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (143.3ms)[0m   [0;1mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "company" varchar(255), "website" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (123.5ms)[0m   [0;1mCREATE TABLE "proposal_sections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "proposal_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (115.8ms)[0m   [0;1mCREATE TABLE "proposals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_name" varchar(255), "send_date" date, "client_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (125.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (102.5ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (142.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20111128232157')[0m
+  [4;36;1mSQL (109.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20111128231720')[0m
+  [4;35;1mSQL (109.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20111128231731')[0m
+  [4;36;1mSQL (109.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20111128231741')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (127.2ms)[0m   [0;1mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "company" varchar(255), "website" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (107.2ms)[0m   [0;1mCREATE TABLE "proposal_sections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "proposal_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.4ms)[0m   [0;1mCREATE TABLE "proposals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_name" varchar(255), "send_date" date, "client_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (108.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (109.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (108.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20111128232157')[0m
+  [4;36;1mSQL (117.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20111128231720')[0m
+  [4;35;1mSQL (109.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20111128231731')[0m
+  [4;36;1mSQL (109.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20111128231741')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mProposal Load (0.3ms)[0m   [0mSELECT * FROM "proposals" [0m
+  [4;36;1mProposal Load (0.4ms)[0m   [0;1mSELECT * FROM "proposals" LIMIT 1[0m
+  [4;35;1mProposal Load (0.3ms)[0m   [0mSELECT * FROM "proposals" LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mProposal Load (0.5ms)[0m   [0;1mSELECT * FROM "proposals" LIMIT 1[0m
+  [4;35;1mProposal Load (0.4ms)[0m   [0mSELECT * FROM "proposals" LIMIT 1[0m
+  [4;36;1mProposal Load (0.4ms)[0m   [0;1mSELECT * FROM "proposals" LIMIT 1[0m
+  [4;35;1mProposal Load (0.4ms)[0m   [0mSELECT * FROM "proposals" LIMIT 1[0m
+  [4;36;1mProposal Load (0.4ms)[0m   [0;1mSELECT * FROM "proposals" LIMIT 1[0m
+  [4;35;1mProposalSection Load (0.4ms)[0m   [0mSELECT "proposal_sections".id FROM "proposal_sections" WHERE ("proposal_sections".proposal_id = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mProposalSection Load (0.5ms)[0m   [0mSELECT * FROM "proposal_sections" [0m
+  [4;36;1mProposalSection Load (0.4ms)[0m   [0;1mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = 1) LIMIT 1[0m
+  [4;35;1mProposalSection Load (0.4ms)[0m   [0mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = 1) LIMIT 1[0m
+  [4;36;1mProposalSection Load (0.4ms)[0m   [0;1mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = 1) LIMIT 1[0m
+  [4;35;1mProposalSection Load (0.4ms)[0m   [0mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mProposalSection Load (0.6ms)[0m   [0mSELECT * FROM "proposal_sections" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mProposalSection Load (0.4ms)[0m   [0mSELECT * FROM "proposal_sections" LIMIT 1[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2012-12-01 23:36:02) [GET]
+  Parameters: {"id"=>"1"}
+
+SyntaxError (/home/heel/www/bidsketch-test/app/controllers/proposal_viewer_controller.rb:24: syntax error, unexpected '}', expecting tASSOC
+{proposal_send_date}  Prepared by: {proposal_user_name}
+                    ^):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (26.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 23:36:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProposal Load (0.2ms)[0m   [0;1mSELECT * FROM "proposals" WHERE ("proposals"."id" = 1) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;36;1mProposalSection Load (0.3ms)[0m   [0;1mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = '1') LIMIT 1[0m
+
+NameError (undefined local variable or method `cient' for #<ProposalViewerController:0x000000035d7638>):
+  app/controllers/proposal_viewer_controller.rb:10:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (32.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 23:36:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProposal Load (0.3ms)[0m   [0mSELECT * FROM "proposals" WHERE ("proposals"."id" = 1) [0m
+  [4;36;1mClient Load (0.6ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mProposalSection Load (0.3ms)[0m   [0mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = '1') LIMIT 1[0m
+
+TypeError (can't convert Date into String):
+  app/models/template.rb:16:in `gsub!'
+  app/models/template.rb:16:in `block in render'
+  app/models/template.rb:16:in `each'
+  app/models/template.rb:16:in `render'
+  app/controllers/proposal_viewer_controller.rb:19:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 23:37:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProposal Load (0.2ms)[0m   [0;1mSELECT * FROM "proposals" WHERE ("proposals"."id" = 1) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;36;1mProposalSection Load (0.2ms)[0m   [0;1mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = '1') LIMIT 1[0m
+
+TypeError (can't convert Date into String):
+  app/models/template.rb:16:in `gsub!'
+  app/models/template.rb:16:in `block in render'
+  app/models/template.rb:16:in `each'
+  app/models/template.rb:16:in `render'
+  app/controllers/proposal_viewer_controller.rb:19:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (28.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 23:37:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProposal Load (0.3ms)[0m   [0mSELECT * FROM "proposals" WHERE ("proposals"."id" = 1) [0m
+  [4;36;1mClient Load (0.8ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mProposalSection Load (0.2ms)[0m   [0mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = '1') LIMIT 1[0m
+
+TypeError (can't convert Date into String):
+  app/models/template.rb:16:in `gsub!'
+  app/models/template.rb:16:in `block in render'
+  app/models/template.rb:16:in `each'
+  app/models/template.rb:16:in `render'
+  app/controllers/proposal_viewer_controller.rb:19:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 23:37:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProposal Load (0.2ms)[0m   [0;1mSELECT * FROM "proposals" WHERE ("proposals"."id" = 1) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;36;1mProposalSection Load (0.3ms)[0m   [0;1mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = '1') LIMIT 1[0m
+Completed in 105ms (View: 4, DB: 1) | 200 OK [http://localhost/proposal_viewer/show/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 23:37:21) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/style/style.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 23:37:21) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/images/logo-footer.png" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 23:37:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProposal Load (0.2ms)[0m   [0mSELECT * FROM "proposals" WHERE ("proposals"."id" = 1) [0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mProposalSection Load (0.2ms)[0m   [0mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = '1') LIMIT 1[0m
+Completed in 46ms (View: 1, DB: 1) | 200 OK [http://localhost/proposal_viewer/show/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 23:37:48) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/style/style.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 23:37:48) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/images/logo-footer.png" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 23:39:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProposal Load (0.3ms)[0m   [0;1mSELECT * FROM "proposals" WHERE ("proposals"."id" = 1) [0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;36;1mProposalSection Load (0.3ms)[0m   [0;1mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = '1') LIMIT 1[0m
+
+Errno::ENOENT (No such file or directory - /home/heel/www/bidsketch-testpublic/proposal-template/index.html):
+  app/models/template.rb:15:in `read'
+  app/models/template.rb:15:in `render'
+  app/controllers/proposal_viewer_controller.rb:19:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProposalViewerController#show (for 127.0.0.1 at 2012-12-01 23:39:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProposal Load (0.3ms)[0m   [0mSELECT * FROM "proposals" WHERE ("proposals"."id" = 1) [0m
+  [4;36;1mClient Load (3.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mProposalSection Load (0.3ms)[0m   [0mSELECT * FROM "proposal_sections" WHERE ("proposal_sections"."proposal_id" = '1') LIMIT 1[0m
+Completed in 187ms (View: 3, DB: 4) | 200 OK [http://localhost/proposal_viewer/show/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 23:39:40) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/style/style.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-12-01 23:39:40) [GET]
+
+ActionController::RoutingError (No route matches "/proposal_viewer/show/images/logo-footer.png" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/heel/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
